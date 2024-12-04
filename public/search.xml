@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>用51单片机点亮一个 LED</title>
+      <link href="/Project/article/2.html"/>
+      <url>/Project/article/2.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="用51单片机点亮一个-LED"><a href="#用51单片机点亮一个-LED" class="headerlink" title="用51单片机点亮一个 LED"></a>用51单片机点亮一个 LED</h1><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol><li><p>安装 <a href="https://www.keil.com/download/product" title="keil5官网">keil5</a></p><p>点击链接进入 keil 官网，因为是51单片机所以下载 C51 版本。</p></li><li><p>安装 <a href="https://www.stcmicro.com/cn/rjxz.html" title="stc官网">stc-isp</a></p><p>进入官网在软件下载中自行下载最新版即可。</p></li></ol><span id="more"></span><h2 id="新建一个-keil5-C-Project-文件"><a href="#新建一个-keil5-C-Project-文件" class="headerlink" title="新建一个 keil5  C Project 文件"></a>新建一个 keil5  C Project 文件</h2><p>点击 Project -&gt; new uVision Project -&gt;命名为“点亮一个 LED”。</p><p>如图所示：</p><img src="https://lioyae-1304956304.cos.ap-nanjing.myqcloud.com/imags/Markdown/202403192143979.png" alt="屏幕截图 2024-03-19 214333" style="zoom: 25%;" /><img src="https://lioyae-1304956304.cos.ap-nanjing.myqcloud.com/imags/Markdown/202403192146401.png" alt="屏幕截图 2024-03-19 214511" style="zoom: 33%;" /><p>在器件选择中选择 AT89C52 器件。</p><img src="https://lioyae-1304956304.cos.ap-nanjing.myqcloud.com/imags/Markdown/202403192146243.png" alt="屏幕截图 2024-03-19 214600" style="zoom:50%;" /><p>在弹出的 Copy’STARTUP.A51’to Project Folder and Add File to Project 窗口中选择否。</p><img src="https://lioyae-1304956304.cos.ap-nanjing.myqcloud.com/imags/Markdown/202403192157668.png" alt="屏幕截图 2024-03-19 215705" style="zoom:50%;" /><p>在新出的窗口中邮件 Source Group 1 中右键选中图中高亮部分。</p><img src="https://lioyae-1304956304.cos.ap-nanjing.myqcloud.com/imags/Markdown/202403192159191.png" alt="屏幕截图 2024-03-19 215754" style="zoom: 25%;" /><p>新建 .c 程序并命名为 main。</p><img src="https://lioyae-1304956304.cos.ap-nanjing.myqcloud.com/imags/Markdown/202403192201662.png" alt="屏幕截图 2024-03-19 220101" style="zoom:50%;" /><p>在 main.c 中键入一下代码测试运行。</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REGX52.H&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">P = <span class="number">0xFE</span>;</span><br><span class="line"><span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 单片机学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 51单片机 </tag>
+            
+            <tag> 学习笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>利用 Hexo + NexT 部署静态博客</title>
+      <link href="/Project/article/9a5087c6.html"/>
+      <url>/Project/article/9a5087c6.html</url>
+      
+        <content type="html"><![CDATA[<span id="more"></span>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> NexT </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/Project/article/1.html"/>
+      <url>/Project/article/1.html</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
